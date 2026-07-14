@@ -10,13 +10,16 @@ function App() {
 
   async function getIssues() {
     const response = await fetch("https://fastapi-poc-04n9.onrender.com/issues");
+    console.log("Status:", response.status);
     const data = await response.json();
+    console.log("Data:", data);
     setIssues(data);
+}
   }
 
   async function searchIssue() {
     const response = await fetch(
-      `http://localhost:8000/issues/${issueId}`
+      `https://fastapi-poc-04n9.onrender.com/issues/${issueId}`
     );
 
     const data = await response.json();
