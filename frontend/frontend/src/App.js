@@ -14,7 +14,7 @@ function App() {
     const data = await response.json();
     console.log("Data:", data);
     setIssues(data);
-}
+    }
   }
 
   async function searchIssue() {
