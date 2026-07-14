@@ -9,7 +9,7 @@ function App() {
   const [issueId, setIssueId] = useState("");
 
   async function getIssues() {
-    const response = await fetch("http://localhost:8000/issues");
+    const response = await fetch("https://fastapi-poc-04n9.onrender.com/issues");
     const data = await response.json();
     setIssues(data);
   }
