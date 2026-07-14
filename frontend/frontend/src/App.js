@@ -15,7 +15,6 @@ function App() {
     console.log("Data:", data);
     setIssues(data);
     }
-  }
 
   async function searchIssue() {
     const response = await fetch(
